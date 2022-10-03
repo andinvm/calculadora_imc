@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC BeLIV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="area">
+        <div class="title"> 
+            <h1>seu start pra uma vida saudável</h1>
+        </div>
+            
+        <div class="container">
+
+            <div class="calc">
+                <h2>Calcule seu IMC</h2>
+            <label>Nome</label>
+            <input type="text" placeholder="Digite seu nome">
+            </div>
+            
+            <div class="coluna">
+                <div class="altura">
+                <label>Altura</label>
+                <input id="height" type="number" placeholder="Sua altura em centimetros">
+                </div>
+
+                <div class="peso">
+                    <label>Peso</label>
+                    <input id="weight" type="number" placeholder="Seu peso em kg">
+                </div>  
+            </div>
+
+            <button onclick="calculate()"> CALCULAR </button>
+
+            <textarea name="" id="text_area" rows="8"></textarea>
+                        
+            <div class="imagem">
+                <img src="./img/ILUSTRATION.png">
+            </div>
+            
+            <div class="imagem2">
+                <img src="./img/LOGO LIV HORIZONTAL 1.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"> </script>
+
+</html>
