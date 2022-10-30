@@ -18,13 +18,13 @@
             <div class="calc">
                 <h2>Calcule seu IMC</h2>
             <label>Nome</label>
-            <input type="text" placeholder="Digite seu nome">
+            <input type="text" id="paciente" placeholder = "Digite seu nome">
             </div>
             
             <div class="coluna">
                 <div class="altura">
                 <label>Altura</label>
-                <input id="height" type="number" placeholder="Sua altura em centimetros">
+                <input id = "height" type = "number" placeholder = "Sua altura em centimetros">
                 </div>
 
                 <div class="peso">
@@ -33,8 +33,13 @@
                 </div>  
             </div>
 
-            <button onclick="calculate()"> CALCULAR </button>
-
+            <div class="botoes">
+                <button  onclick = "calculate()"> CALCULAR </button>
+                    
+                <button type="reset" onclick = "limp()"> LIMPAR </button>
+                
+            </div>
+                
             <textarea name="" id="text_area" rows="8"></textarea>
                         
             <div class="imagem">

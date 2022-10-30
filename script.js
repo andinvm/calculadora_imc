@@ -1,8 +1,9 @@
 function calculate(){
-    var height = (document.getElementById ("height").value/100)
-    var weight=document.getElementById ("weight").value;
+    var paciente = document.getElementById("paciente");
+    var height = document.getElementById ("height");
+    var weight = document.getElementById ("weight");
     
-    var imc = weight / (height) ** 2;
+    var imc = weight.value / (height.value/100) ** 2;
     
     if(imc<18.5) {
         text="Você está magro!"
@@ -20,4 +21,12 @@ function calculate(){
         text="Você está obesidade morbida!"
     }
     document.getElementById("text_area").innerText=text
+    
+}
+
+function limp() {
+    
+    height.value = "";
+    weight.value = "";
+    paciente.value = "";
 }
